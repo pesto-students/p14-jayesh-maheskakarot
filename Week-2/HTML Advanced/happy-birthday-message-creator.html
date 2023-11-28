@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Message Creator</title>
+    <style>
+    
+
+        form {
+            display: table;
+            
+            border-radius: 8px;
+            
+        }
+
+        .group {
+            display: table-row;
+            margin-bottom: 16px;
+        }
+
+        label, input {
+            display: table-cell;
+        }
+
+        label {
+            padding-right: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Happy Birthday Message Creator</h1>
+
+    <form method="POST" enctype="multipart/form-data">
+    
+    <div class="group">
+        <label for="message">Message?</label>
+        <input type="text" name="message" id="message">
+    </div> <br>
+    
+    <div class="group">
+        <label for="email">Email address?</label>
+        <input type="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" name="email" id="name">
+    </div> <br>
+
+    <div class="group">
+        <label for="date">Date to send?</label>
+        <input type="date" name="date" id="date">
+    </div> <br>
+
+    <div class="group">
+        <label for="color-picker">Message color?</label>
+        <input type="color" name="color-picker" id="color-picker">
+    </div> <br>
+
+    <div class="group">
+        <label for="choose-blinks">Number of blinks?</label>
+        <input type="number" name="choose-blinks" id="choose-blinks" min="0" max="10" value="0">
+    </div> <br>
+
+    <div class="group">
+        <label for="volume">Music volume?</label>
+        <input type="range" name="volume" id="volume" min="0" max="50" value="20">
+    </div> <br>
+
+    <button>Send Birthday Message</button>
+    
+
+    </form>
+</body>
+</html>
