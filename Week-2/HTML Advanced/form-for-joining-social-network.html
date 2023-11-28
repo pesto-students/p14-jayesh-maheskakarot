@@ -6,20 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Join a social network</title>
     <style>
-        label{
-            
+        form {
+            display: table;
+        }
+        
+        .input-group {
+            display: table-row;
         }
 
-        input{
-           
+        label, input{
+            display: table-cell;
+        }
+
+        label{
+           padding-right: 10px;
         }
     </style>
 </head>
 <body>
+    <h1>Join a social network</h1>
     <form action="">
-        <h1>Join a social network</h1>
         <div class="input-group">
-            <label for="fullName">Full name:</label>&emsp;&ensp;&nbsp;
+            <label for="fullName">Full name:</label>
             <input type="text" id="fullName" name="fullName">
         </div> <br>
         
@@ -29,12 +37,12 @@
         </div> <br>
 
         <div class="input-group">
-            <label for="about">About you</label>&emsp;&ensp;
+            <label for="about">About you</label>
             <textarea name="About you" id="about" cols="50" rows="3"></textarea>
-        </div>
+        </div> <br>
 
         <div class="input-group">
-            <label for="picture">Photo:</label>&emsp;&emsp;&emsp;&nbsp;
+            <label for="picture">Photo:</label>
             <input type="file" name="picture" id="picture">
         </div> <br>
 
